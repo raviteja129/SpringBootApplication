@@ -1,0 +1,72 @@
+{
+  "info": {
+    "name": "Reservation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "getUsers",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/api/v1/users"
+      }
+    },
+    {
+      "name": "createUser",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:8080/api/v1/users",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"loginId\": \"RRR3\",\n    \"fname\": \"John\",\n    \"lname\": \"Eluri\",\n    \"email\": \"john@yahoo.com\",\n    \"mobile\": \"4031256789\",\n    \"password\": \"test3\"\n  }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "getUser",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/api/v1/users/3"
+      }
+    },
+    {
+      "name": "deleteUser",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:8080/api/v1/users/3"
+      }
+    },
+    {
+      "name": "updateUser",
+      "event": [],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": "http://localhost:8080/api/v1/users/3",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"loginId\": \"RRR3\",\n  \"fname\": \"John\",\n  \"lname\": \"Cena\",\n  \"email\": \"john@yahoo.com\",\n  \"mobile\": \"4031256789\",\n  \"password\": \"test3\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variable": []
+}
